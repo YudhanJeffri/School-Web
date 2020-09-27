@@ -1,0 +1,154 @@
+*{
+    margin: 0; padding:0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li,a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-weight: bold;
+    align-items: center;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.logo{
+    cursor: pointer;
+    margin-right: 30px;
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links ul li {
+    text-align: center;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.nav__links li:hover{
+    color: red;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0;
+}
+nav{
+    width: 100%; height: 100px;
+    /*background-color:  red;*/
+    display: flex; color: white;
+    
+}
+body{
+    background-image: url(./asset/rec_grey.svg);
+    background-repeat: no-repeat;
+}
+
+.div-logo{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.div-text{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1,p{
+    color: white;
+}
+p{
+    size: 30px;
+}
+.search{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input{
+    border: 1px solid red;
+    height: 60px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 1000px;
+
+}
+.btn{
+    position: absolute;
+    top: 60%;
+    left: 78%;
+    transform: translate(-50%,-50%);
+}
+.text_video{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+}
+.iframe_frame{
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.test{
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(21,34,70);
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+}
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(21,34,70);
+    z-index: -10;
+    transition: all 0.5s;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+    
+
+
+
+
